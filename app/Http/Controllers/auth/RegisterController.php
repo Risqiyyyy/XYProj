@@ -14,25 +14,25 @@ class RegisterController extends Controller
         return view('auth.Register');
     }
 
-    public function store(Request $request)
-    {
-        $response = Http::post('http://localhost:5000/users', [
-            'name' => $request->name,
-            'email' => $request->email,
-            'username' => $request->username,
-            'no_wa' => $request->no_wa,
-            'pin' => $request->pin,
-            'password' => $request->password,
-            'referal' => $request->referal
-        ]);
+    // public function store(Request $request)
+    // {
+    //     $response = Http::post('http://localhost:5000/users', [
+    //         'name' => $request->name,
+    //         'email' => $request->email,
+    //         'username' => $request->username,
+    //         'no_wa' => $request->no_wa,
+    //         'pin' => $request->pin,
+    //         'password' => $request->password,
+    //         'referal' => $request->referal
+    //     ]);
     
-        if ($response->successful()) {
-            $responseData = $response->json();
-            return $responseData;
-        } else {
-            return $response->status();
-        }
-    }
+    //     if ($response->successful()) {
+    //         $responseData = $response->json();
+    //         return $responseData;
+    //     } else {
+    //         return $response->status();
+    //     }
+    // }
 
     /**
      * Display the specified resource.
