@@ -1,0 +1,29 @@
+/*
+ *List game sewaktu-waktu dapat update
+ * Game yang tersedia:
+	- Mobile Legends : mobile-legends
+	- Hago : hago
+	- Zepeto : zepeto
+	- Lords Mobile : lords-mobile
+	- Marvel Super War : marvel-super-war
+	- Ragnarok M : ragnarok-m-eternal-love-big-cat-coin
+	- Speed Drifters : speed-drifters
+	- Laplace M : laplace-m
+	- Valorant : valorant
+	- Higgs Domino : higgs-domino
+	- Point Blank : point-blank
+	- Dragon Raja : dragon-raja
+	- League of Legends: Wild Rift : league-of-legends-wild-rift (testing)
+	- Free Fire : free-fire
+	- Free Fire Max : free-fire-max
+	- Tom and Jerry:chase : tom-and-jerry-chase
+	- Cocofun : cocofun (testing)
+	- 8 Ball Pool : 8-ball-pool (testing)
+	- Auto Chess : auto-chess (testing)
+	- Bullet Angel : bullet-angel (testing)
+	- Arena of Valor : arena-of-valor
+	- Call of Duty MOBILE : call-of-duty-mobile
+	- Genshin Impact : genshin-impact | server : 'os_asia', 'os_usa', 'os_euro', 'os_cht'
+	- IndoPlay : indoplay
+	- Domino Gaple Boyaa Qiuqiu : domino-gaple-qiuqiu-boyaa
+*/
