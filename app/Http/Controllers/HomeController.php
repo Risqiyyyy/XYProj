@@ -3,14 +3,38 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
+        // $key = env('VIP_RESELLER_API_KEY');
+        // $sign = env('VIP_RESELLER_API_SIGN');
+    
+        // $response = Http::asForm()->post('https://vip-reseller.co.id/api/game-feature', [
+        //     'key' => $key,
+        //     'sign' => $sign,
+        //     'type' => 'services',
+        //     'filter_status' => 'available'
+        // ]);
+    
+        // $data = $response->json();
+        // if (is_array($data)) {
+            
+        //     if (isset($data['result']) && isset($data['data'])) {
+        //         if ($data['result'] === true) {
+        //             $firstFourData = array_slice($data['data'], 0, 4);
+        //             return view('Home', ['firstFourData' => $firstFourData]);
+        //         } else {
+        //             return redirect()->back()->with('error', 'Permintaan gagal: ' . $data['message']);
+        //         }
+        //     } else {
+        //         return redirect()->back()->with('error', 'Indeks respons tidak valid.');
+        //     }
+        // } else {
+        //     return redirect()->back()->with('error', 'Respons tidak valid.');
+        // }
         return view('Home');
     }
 
