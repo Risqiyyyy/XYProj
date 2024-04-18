@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Produk extends Model
 {
     use HasFactory;
+
+    public $fillable = ['nama_produk','deskripsi','images'];
+    public $timestamps = true;
 }
