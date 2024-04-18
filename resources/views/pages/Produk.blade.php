@@ -34,12 +34,12 @@
                         </li>
                         <li class="nav-item">
                             <button class="nav-link d-center">
-                                merchandise
+                                Streaming
                             </button>
                         </li>
                         <li class="nav-item">
                             <button class="nav-link d-center">
-                                hardware
+Website
                             </button>
                         </li>
                     </ul>
