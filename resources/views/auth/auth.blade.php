@@ -33,7 +33,8 @@
                                         aria-labelledby="loginArea-tab">
                                         <div class="login-content">
                                             <div class="modal-body p-0">
-                                                <form action="#" class="p-4 p-sm-8">
+                                                <form action="{{ route('login') }}" class="p-4 p-sm-8" method="POST">
+                                                    @csrf
                                                     <p>Sign up for faster checkout, special offers, and customer
                                                         support!</p>
                                                     <div class="form-inside mt-6 p-3 p-sm-6">
@@ -41,7 +42,7 @@
                                                             <div class="col-sm-12">
                                                                 <div class="single-input text-start">
                                                                     <label for="loginemail">Email*</label>
-                                                                    <input type="text" id="loginemail"
+                                                                    <input type="text" id="loginemail" name="email"
                                                                         placeholder="Enter your email"
                                                                         autocomplete="off">
                                                                 </div>
@@ -50,7 +51,7 @@
                                                                 <div class="single-input text-start">
                                                                     <label for="loginpassword">Password*</label>
                                                                     <div class="pass-box d-center position-relative">
-                                                                        <input type="text" id="loginpassword"
+                                                                        <input type="password" id="loginpassword" name="password"
                                                                             placeholder="Enter your Password"
                                                                             autocomplete="off">
                                                                         <i
@@ -87,31 +88,24 @@
                                         aria-labelledby="regArea-tab">
                                         <div class="reg-content regMod">
                                             <div class="modal-body p-0">
-                                                <form action="#" class="p-4 p-sm-8">
+                                                <form action="{{ route('register') }}" class="p-4 p-sm-8" method="POST">
+                                                    @csrf
                                                     <p>Sign up for faster checkout, special offers, and customer
                                                         support!</p>
                                                     <div class="form-inside mt-6 p-3 p-sm-6">
                                                         <div class="row">
                                                             <div class="col-sm-12">
                                                                 <div class="single-input text-start">
-                                                                    <label for="fname">First Name*</label>
-                                                                    <input type="text" id="fname"
+                                                                    <label for="fname">Full Name*</label>
+                                                                    <input type="text" id="fname" name="name"
                                                                         placeholder="Enter Your First Name"
                                                                         autocomplete="off">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-12">
                                                                 <div class="single-input text-start">
-                                                                    <label for="lname">Last Name*</label>
-                                                                    <input type="text" id="lname"
-                                                                        placeholder="Enter Your Last Name"
-                                                                        autocomplete="off">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-12">
-                                                                <div class="single-input text-start">
                                                                     <label for="email">Email*</label>
-                                                                    <input type="text" id="email"
+                                                                    <input type="text" id="email" name="email"
                                                                         placeholder="Enter your email"
                                                                         autocomplete="off">
                                                                 </div>
@@ -120,20 +114,7 @@
                                                                 <div class="single-input text-start">
                                                                     <label for="password">Password*</label>
                                                                     <div class="pass-box d-center position-relative">
-                                                                        <input type="text" id="password"
-                                                                            placeholder="Enter your Password"
-                                                                            autocomplete="off">
-                                                                        <i
-                                                                            class="material-symbols-outlined show-hide-pass position-absolute end-0 pe-4">
-                                                                            visibility </i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-12">
-                                                                <div class="single-input text-start">
-                                                                    <label for="cpassword">Confirm Password*</label>
-                                                                    <div class="pass-box d-center position-relative">
-                                                                        <input type="text" id="cpassword"
+                                                                        <input type="password" id="password" name="password"
                                                                             placeholder="Enter your Password"
                                                                             autocomplete="off">
                                                                         <i

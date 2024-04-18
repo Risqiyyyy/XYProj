@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class HomeController extends Controller
 {
@@ -38,12 +41,53 @@ class HomeController extends Controller
         return view('Home');
     }
 
+
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function login(Request $request)
     {
-        //
+        $request->validate([
+            'email' => 'required|string|email',
+            'password' => 'required|string',
+        ]);
+    
+        $user = User::where('email', $request->email)->first();
+    
+        if (!$user) {
+            Alert::error('Error', 'Email tidak terdaftar.');
+            return redirect()->back();
+        }
+    
+        if (!Hash::check($request->password, $user->password)) {
+            Alert::error('Error', 'Password salah.');
+            return redirect()->back();
+        }
+
+        if ($user->role === 'admin') {
+            return redirect()->route('admin');
+        } else {
+            return redirect()->route('produk');
+        }
+    }
+    
+
+    public function register(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8',
+        ]);
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'role' => 'user',
+        ]);
+
+        return response()->json(['message' => 'User successfully registered', 'user' => $user]);
     }
 
     /**
