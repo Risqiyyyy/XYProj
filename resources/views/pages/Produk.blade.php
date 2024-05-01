@@ -1,6 +1,6 @@
 @extends('pages.partials.app')
 
-@section('title', 'Page Title')
+@section('title', 'Produk')
 
 @section('content')
     <!-- Banner-section start -->
@@ -52,13 +52,13 @@
                         @foreach($produk as $product)
                         <div class="col-xl-4 col-md-6">
                             <div class="single-box box-style box-first p-3 p-sm-6 d-flex flex-row gap-6">
-                                <div class="icon-area">
-                                    <img src="assets/images/{{ $product->images }}" alt="Image">
+                                <div class="icon-area position-relative d-center">
+                                    <img src="assets/images/logo/{{ $product->images }}" alt="Image" class="mb-3" style="width: 100px; height: 100px;">
                                 </div>
                                 <div class="text-area text-start">
                                     <h5 class="mb-2">{{ $product->nama_produk }}</h5>
                                     <div class="btn-area mt-4 alt-bg">
-                                        <a href="cart.html" class="box-style btn-box d-center">
+                                        <a href="{{ route('redirect', ['id' => $product->id]) }}" class="box-style btn-box d-center">
                                             <i class="material-symbols-outlined mat-icon fs-five">shopping_bag</i>
                                         </a>
                                     </div>
@@ -74,13 +74,13 @@
                             @if($product->kategori_id == 2) 
                             <div class="col-xl-4 col-md-6">
                                 <div class="single-box box-style box-first p-3 p-sm-6 d-flex flex-row gap-6">
-                                    <div class="icon-area">
-                                        <img src="assets/images/{{ $product->images }}" alt="Image">
+                                    <div class="icon-area position-relative d-center">
+                                        <img src="assets/images/logo/{{ $product->images }}" alt="Image" class="mb-3" style="width: 100px; height: 100px;">
                                     </div>
                                     <div class="text-area text-start">
                                         <h5 class="mb-2">{{ $product->nama_produk }}</h5>
                                         <div class="btn-area mt-4 alt-bg">
-                                            <a href="cart.html" class="box-style btn-box d-center gap-2">
+                                            <a href="{{ route('redirect', ['id' => $product->id]) }}" class="box-style btn-box d-center gap-2">
                                                 <i class="material-symbols-outlined mat-icon fs-five">shopping_bag</i>
                                             </a>
                                         </div>
@@ -97,13 +97,13 @@
                             @if($product->kategori_id == 1)
                             <div class="col-xl-4 col-md-6">
                                 <div class="single-box box-style box-first p-3 p-sm-6 d-flex flex-row gap-6">
-                                    <div class="icon-area">
-                                        <img src="assets/images/{{ $product->images }}" alt="Image">
+                                    <div class="icon-area position-relative d-center">
+                                        <img src="assets/images/logo/{{ $product->images }}" alt="Image" class="mb-3" style="width: 100px; height: 100px;">
                                     </div>
                                     <div class="text-area text-start">
                                         <h5 class="mb-2">{{ $product->nama_produk }}</h5>
                                         <div class="btn-area mt-4 alt-bg">
-                                            <a href="cart.html" class="box-style btn-box d-center gap-2">
+                                            <a href="{{ route('redirect', ['id' => $product->id]) }}" class="box-style btn-box d-center gap-2">
                                                 <i class="material-symbols-outlined mat-icon fs-five">shopping_bag</i>
                                             </a>
                                         </div>

@@ -214,7 +214,7 @@
                     <h4 class="sub-title">Produk <span>XY Project</span></h4>
                     {{-- <span class="fs-two heading mb-6">Our Games are <span>Vibrant</span> Worlds With
                         <span>Charming</span> Characters</span> --}}
-                    <p>XY Project menyediakan Layanan Pulsa, PPOB, TopUp Game Murah, Produk Digital, dan Jasa Pembuatan Website.</p>
+                    <p>XY Project menyediakan Layanan Pulsa, PPOB, TopUp  Murah, Produk Digital, dan Jasa Pembuatan Website.</p>
                 </div>
             </div>
         </div>
@@ -256,9 +256,10 @@
                                     <div class="col-md-5">
                                         <div class="position-relative d-center">
                                             <img src="assets/images/logo/mole1.jpg" class="w-50" alt="sec-img">
-                                            <a href=""
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#loginMod"
                                                 class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
-                                                Play
+                                                Beli
                                             </a>
                                         </div>
                                     </div>
@@ -274,9 +275,10 @@
                                     <div class="col-md-5">
                                         <div class="position-relative d-center">
                                             <img src="assets/images/logo/pubg.jpg" class="w-50" alt="sec-img">
-                                            <a href=""
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#loginMod"
                                                 class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
-                                                Play
+                                                Beli
                                             </a>
                                         </div>
                                     </div>
@@ -292,9 +294,10 @@
                                     <div class="col-md-5">
                                         <div class="position-relative d-center">
                                             <img src="assets/images/logo/ghensin.jpg" class="w-50" alt="sec-img">
-                                            <a href=""
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#loginMod"
                                                 class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
-                                                Play
+                                                Beli
                                             </a>
                                         </div>
                                     </div>
@@ -310,9 +313,10 @@
                                     <div class="col-md-5">
                                         <div class="position-relative d-center">
                                             <img src="assets/images/logo/freefire.jpg" class="w-50" alt="sec-img">
-                                            <a href=""
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#loginMod"
                                                 class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
-                                                Play
+                                                Beli
                                             </a>
                                         </div>
                                     </div>
@@ -334,7 +338,9 @@
                                     <div class="col-md-5">
                                         <div class="position-relative d-center">
                                             <img src="assets/images/logo/yt.jpg" class="w-50" alt="sec-img">
-                                            <a href="" class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#loginMod"
+                                            class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
                                                 Beli
                                             </a>
                                         </div>
@@ -351,7 +357,9 @@
                                     <div class="col-md-5">
                                         <div class="position-relative d-center">
                                             <img src="assets/images/logo/disney.jpg" class="w-50" alt="sec-img">
-                                            <a href="" class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#loginMod"
+                                            class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
                                                 Beli
                                             </a>
                                         </div>
@@ -368,7 +376,9 @@
                                     <div class="col-md-5">
                                         <div class="position-relative d-center">
                                             <img src="assets/images/logo/netflix.jpg" class="w-50" alt="sec-img">
-                                            <a href="" class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
+                                            <a href="{{ route('netflix') }}" data-bs-toggle="modal"
+                                            data-bs-target="#loginMod"
+                                            class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
                                                 Beli
                                             </a>
                                         </div>
@@ -385,7 +395,9 @@
                                     <div class="col-md-5">
                                         <div class="position-relative d-center">
                                             <img src="assets/images/logo/vidio.jpg" class="w-50" alt="sec-img">
-                                            <a href="" class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#loginMod"
+                                            class="box-style btn-box-second heading-five fs-five mfp-iframe text-uppercase d-center position-absolute">
                                                 Beli
                                             </a>
                                         </div>

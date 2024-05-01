@@ -48,6 +48,12 @@
     <!--==================================================================-->
 
     <!-- ==== js dependencies start ==== -->
+    <script>
+        var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
+        var collapseList = collapseElementList.map(function (collapseEl) {
+        return new bootstrap.Collapse(collapseEl)
+        })
+    </script>
     <script src="{{ asset('home/js/main.js') }}"></script>
     <script src="{{ asset('home/js/plugins/plugin-custom.js') }}"></script>
     <script src="{{ asset('home/js/plugins/plugins.js') }}"></script>
