@@ -8,28 +8,6 @@
                         <span>MENU</span>
                     </button>
                 </div>
-                <ul class="d-grid gap-4 social-area">
-                    <li>
-                        <a href="https://www.facebook.com/" aria-label="Facebook" class="d-center">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" aria-label="Instagram" class="d-center">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/" aria-label="Linkedin" class="d-center">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/" aria-label="Twitter" class="d-center">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                </ul>
             </div>
             <div class="sidebar-content d-center flex-columnn">
                 <div class="header-section d-block">

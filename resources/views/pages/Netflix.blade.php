@@ -46,7 +46,7 @@
             <div class="tabitem mb-3">
                 <div class="row cus-mar">
                     @if($gamelist->isEmpty())
-                        <p>No products found.</p>
+                        <p class="text-center mb-10">Produk Tidak tersedia.</p>
                     @else
                             @foreach($gamelist as $g)
                             <div class="col-xl-4 col-md-6">
@@ -54,6 +54,7 @@
                                     <div class="text-area text-start">
                                         <h5 class="mb-2">{{ $g->game }}</h5>
                                         <h6>{{ $g->name }}</h6>
+                                        <h5>Rp{{ number_format($g->price, 0, ',', '.') }}</h5>
                                         <div class="btn-area mt-4 alt-bg">
                                             <a href="" class="box-style btn-box d-center gap-2">
                                                 <i class="material-symbols-outlined mat-icon fs-five">add_shopping_cart</i>

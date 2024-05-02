@@ -466,7 +466,7 @@
                 </div>
                 <div class="btn-area">
                     <div class="btn-area alt-bg mt-10 d-flex flex-wrap gap-6 align-items-center">
-                        <a href="about-us.html" class="box-style btn-box btn-box-third d-center text-white">
+                        <a href="https://discord.gg/ZjNngBePJX" class="box-style btn-box btn-box-third d-center text-white">
                             Bergabung
                         </a>
                     </div>
