@@ -25,7 +25,7 @@
                 </button>
             </div> --}}
             <a href="{{ route('home') }}" class="navbar-brand ms-4 ms-xxl-15 d-flex align-items-center gap-2">
-                <img src="assets/images/logo/xylogo.png" class="logo" alt="logo" width="50" height="50">
+                <img src="{{ asset('assets/images/logo/xylogo.png') }}" class="logo" alt="logo" width="50" height="50">
                 <h4>Project</h4>
                 {{-- <img src="assets/images/logo-text.png" class="logo-text d-xxl-block d-none" alt="logo-text"> --}}
             </a>

@@ -24,32 +24,40 @@ class ProdukController extends Controller
     
         $data = $response->json();
 
-        if (is_array($data)) {
-            foreach ($data as $item) {
-                if (is_array($item)){
-                    foreach ($item as $subItem) {
-                        $code = $subItem['code'];
-                        $game = $subItem['game'];
-                        $name = $subItem['name'];
-                        $server = $subItem['server'];
-                        $status = $subItem['status'];
-                        $price = $subItem['price']['basic'];
-                        $existingRecord = GameList::where('code', $code)->first();
-                        if (!$existingRecord) {
-                            GameList::create([
-                                'code' => $code,
-                                'game' => $game,
-                                'name' => $name,
-                                'server' => $server,
-                                'status' => $status,
-                                'price' => $price * 1.5,
-                            ]);
-                        }
-                    }
-                }
-        }
-        }
+        // if (is_array($data)) {
+        //     foreach ($data as $item) {
+        //         if (is_array($item)){
+        //             foreach ($item as $subItem) {
+        //                 $code = $subItem['code'];
+        //                 $game = $subItem['game'];
+        //                 $name = $subItem['name'];
+        //                 $server = $subItem['server'];
+        //                 $status = $subItem['status'];
+        //                 $price = $subItem['price']['basic'];
+        //                 $existingRecord = GameList::where('code', $code)->first();
+        //                 if (!$existingRecord) {
+        //                     GameList::create([
+        //                         'code' => $code,
+        //                         'game' => $game,
+        //                         'name' => $name,
+        //                         'server' => $server,
+        //                         'status' => $status,
+        //                         'price' => $price * 1.5,
+        //                     ]);
+        //                 }
+        //             }
+        //         }
+        // }
+        // }
         $produk = Produk::all();
         return view('pages.Produk',compact('produk'));
+    }
+
+    public function Produkone($nama_produk)
+    {
+        $gamelist = GameList::where('game', $nama_produk)->get();
+        $produk = Produk::where('nama_produk', $nama_produk)->get();
+        // dd($produk);
+        return view('pages.ProdukOne', compact('produk','gamelist'));
     }
 }

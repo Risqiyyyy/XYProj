@@ -14,7 +14,7 @@ class ProdukSeeder extends Seeder
     public function run(): void
     {
         Produk::create([
-            'nama_produk' => "Netflix",
+            'nama_produk' => "Netflix Premium",
             'deskripsi' => "",
             'images' => "netflix.jpg",
             'kategori_id' => 1

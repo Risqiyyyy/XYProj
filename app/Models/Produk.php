@@ -9,6 +9,6 @@ class Produk extends Model
 {
     use HasFactory;
 
-    public $fillable = ['nama_produk','deskripsi','images','kategori_id'];
+    public $fillable = ['nama_produk','deskripsi','images','kategori_id','cara_beli','ketentuan'];
     public $timestamps = true;
 }

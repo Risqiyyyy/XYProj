@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="assets/css/style.min.css">
     </head>
     <body>
-        @include('sweetalert::alert')
         @include('partials.header')
         @include('auth.auth')
         @include('partials.sidebar')
