@@ -21,6 +21,8 @@ Route::get('/redirect/{id}', $controller_path . '\RedirectController@redirectToR
 
 // admin
 Route::get('/xyars', $controller_path . '\admin\DashboardController@index')->name('xyars');
+Route::get('/xyars/user', $controller_path . '\admin\UserController@index')->name('xyars.user');
+
 Route::get('/auth/login', $controller_path . '\admin\LoginController@index')->name('xyarslogin');
 
 // Route::get('/game', $controller_path . '\GameController@index')->name('game');

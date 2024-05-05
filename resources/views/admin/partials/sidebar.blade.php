@@ -24,15 +24,33 @@
                 </li>
 
                 <li class="menu-title" key="t-apps">Transaksi</li>
-
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-calendar"></i>
-                        <span key="t-dashboards">Calendars</span>
+                        <span key="t-dashboards">Riwayat</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="calendar.html" key="t-tui-calendar">TUI Calendar</a></li>
-                        <li><a href="calendar-full.html" key="t-full-calendar">Full Calendar</a></li>
+                        <li><a href="calendar.html" key="t-tui-calendar">Transaksi Sukses</a></li>
+                        <li><a href="calendar-full.html" key="t-full-calendar">Transaksi Gagal</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-title" key="t-apps">Sistem</li>
+                <li>
+                    <a href="chat.html" class="waves-effect">
+                        <i class="bx bx-bitcoin"></i>
+                        <span key="t-chat">Banking</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-user"></i>
+                        <span key="t-dashboards">Member</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="calendar.html" key="t-tui-calendar">User</a></li>
+                        <li><a href="calendar-full.html" key="t-full-calendar">Admin</a></li>
                     </ul>
                 </li>
 
