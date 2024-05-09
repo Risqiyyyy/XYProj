@@ -22,6 +22,10 @@ Route::get('/redirect/{id}', $controller_path . '\RedirectController@redirectToR
 // admin
 Route::get('/xyars', $controller_path . '\admin\DashboardController@index')->name('xyars');
 Route::get('/xyars/user', $controller_path . '\admin\UserController@index')->name('xyars.user');
+// kategori
+Route::get('/xyars/kategori', $controller_path . '\admin\KategoriProdukController@index')->name('xyars.kategori');
+Route::post('/xyars/kategori/add', $controller_path . '\admin\KategoriProdukController@add')->name('kategori.add');
+Route::delete('/xyars/kategori/{id}', $controller_path . '\admin\KategoriProdukController@delete')->name('kategori.delete');
 
 Route::get('/auth/login', $controller_path . '\admin\LoginController@index')->name('xyarslogin');
 
